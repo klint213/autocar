@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoCars - Latest Automatic Car Prices</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #050f1a;
+            color: #33647a;
+            padding: 20px;
+        }
+        
+        /* Hero Section */
+        #home {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #172336;
+            background-image: url(Images/background2.jpg);
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1fabc4;
+            color: rgb(251, 251, 253);
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0a22f8;
+        }
+
+        /* Pricing Section */
+        #pricing {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #pricing h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .pricing-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-item {
+            background-color: #b0befc;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(248, 248, 248, 0.1);
+        }
+
+        .car-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            margin-bottom: 15px;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div img {
+        width: 400px;
+        height: 300px;
+        border: 2px solid #ff3d0036;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        cursor: pointer;
+        margin: 10px;
+        transition: 400ms;
+    }
+    div img:hover {
+        filter: grayscale(1);
+        transform: scale(1.03);   
+    }
+   
+
+        .pricing-item h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: #292525;
+        }
+
+        .pricing-item p {
+            font-size: 1.1rem;
+            color: #1d1a1a;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #647899;
+            color: rgb(250, 245, 245);
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<style>
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div img {
+        width: 400px;
+        height: 300px;
+        border: 2px solid #ff3d0036;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        cursor: pointer;
+        margin: 10px;
+        transition: 400ms;
+    }
+    div img:hover {
+        filter: grayscale(1);
+        transform: scale(1.03);   
+    }
+   
+</style>
+<body>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Welcome to AutoCars, 
+             Your Go-To Source for the Latest Automatic Car Prices</h1>
+        <p>We understand that buying a car is a big decision, and pricing can vary significantly from model to model. 
+            Our goal is to give you the most accurate, up-to-date information so you can make informed decisions, 
+            whether you're shopping for a new car or considering a pre-owned model.</p>
+        <p>From compact sedans to luxurious SUVs, our comprehensive listings cover a wide variety of makes and models, 
+            so you can easily compare prices and find the best deals on the market.</p>
+        <a href="#pricing" class="btn-primary">Explore Latest Prices</a>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div style="background-color: rgba(85, 180, 231, 0.404); 
+                    padding: 10; color: white; border: #88d9e4;">
+            <h3>Latest Automatic Car Prices</h3>
+        </div>
+      
+        <div class="pricing-list">
+            <!-- Car Listing 1 -->
+            <div class="pricing-item">
+                <img src="Images/toyota-corolla.jpg" alt="Toyota Corolla" class="car-image">
+                <h3>Toyota Corolla</h3>
+                <p>Price: $25,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 30 MPG | Transmission: CVT</p>
+            </div>
+            <!-- Car Listing 2 -->
+            <div class="pricing-item">
+                <img src="Images/honda-civic.jpg" alt="Honda Civic" class="car-image">
+                <h3>Honda Civic</h3>
+                <p>Price: $22,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 32 MPG | Transmission: CVT</p>
+            </div>
+            <!-- Car Listing 3 -->
+            <div class="pricing-item">
+                <img src="Images/bmw-x5.jpg" alt="BMW X5" class="car-image">
+                <h3>BMW X5</h3>
+                <p>Price: $55,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 25 MPG | Transmission: 8-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 4 -->
+            <div class="pricing-item">
+                <img src="Images/ford-mustang.jpg" alt="Ford Mustang" class="car-image">
+                <h3>Ford Mustang</h3>
+                <p>Price: $45,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 22 MPG | Transmission: 10-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 5 -->
+            <div class="pricing-item">
+                <img src="Images/audi-a4.jpg" alt="Audi A4" class="car-image">
+                <h3>Audi A4</h3>
+                <p>Price: $40,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 28 MPG | Transmission: 7-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 6 -->
+            <div class="pricing-item">
+                <img src="Images/chevrolet-silverado.jpg" alt="Chevrolet Silverado 1500" class="car-image">
+                <h3>Chevrolet Silverado 1500</h3>
+                <p>Price: $50,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 20 MPG | Transmission: 8-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 7 -->
+            <div class="pricing-item">
+                <img src="Images/mercedes-e-class.jpg" alt="Mercedes-Benz E-Class" class="car-image">
+                <h3>Mercedes-Benz E-Class</h3>
+                <p>Price: $60,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 24 MPG | Transmission: 9-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 8 -->
+            <div class="pricing-item">
+                <img src="Images/honda-crv.jpg" alt="Honda CR-V" class="car-image">
+                <h3>Honda CR-V</h3>
+                <p>Price: $30,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 30 MPG | Transmission: CVT</p>
+            </div>
+            <!-- Car Listing 9 -->
+            <div class="pricing-item">
+                <img src="Images/bmw-3-series.jpg" alt="BMW 3 Series" class="car-image">
+                <h3>BMW 3 Series</h3>
+                <p>Price: $42,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 26 MPG | Transmission: 8-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 10 -->
+            <div class="pricing-item">
+                <img src="Images/lexus-rx350.jpg" alt="Lexus RX 350" class="car-image">
+                <h3>Lexus RX 350</h3>
+                <p>Price: $50,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 27 MPG | Transmission: 8-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 11 -->
+            <div class="pricing-item">
+                <img src="Images/jeep-grand-cherokee.jpg" alt="Jeep Grand Cherokee" class="car-image">
+                <h3>Jeep Grand Cherokee</h3>
+                <p>Price: $48,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 22 MPG | Transmission: 8-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 12 -->
+            <div class="pricing-item">
+                <img src="Images/tesla-model3.jpg" alt="Tesla Model 3" class="car-image">
+                <h3>Tesla Model 3</h3>
+                <p>Price: $55,000</p>
+                <p>Year: 2023 | Fuel Efficiency: Electric | Transmission: 1-Speed Direct Drive</p>
+            </div>
+            <!-- Car Listing 13 -->
+            <div class="pricing-item">
+                <img src="Images/nissan-altima.jpg" alt="Nissan Altima" class="car-image">
+                <h3>Nissan Altima</h3>
+                <p>Price: $26,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 32 MPG | Transmission: CVT</p>
+            </div>
+            <!-- Car Listing 14 -->
+            <div class="pricing-item">
+                <img src="Images/volkswagen-passat.jpg" alt="Volkswagen Passat" class="car-image">
+                <h3>Volkswagen Passat</h3>
+                <p>Price: $28,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 29 MPG | Transmission: 6-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 15 -->
+            <div class="pricing-item">
+                <img src="Images/mazda-6.jpg" alt="Mazda 6" class="car-image">
+                <h3>Mazda 6</h3>
+                <p>Price: $34,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 26 MPG | Transmission: 6-Speed Automatic</p>
+            </div>
+            <!-- Car Listing 16 -->
+            <div class="pricing-item">
+                <img src="Images/subaru-outback.jpg" alt="Subaru Outback" class="car-image">
+                <h3>Subaru Outback</h3>
+                <p>Price: $36,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 28 MPG | Transmission: CVT</p>
+            </div>
+            <!-- Car Listing 17 -->
+            <div class="pricing-item">
+                <img src="Images/infiniti-q50.jpg" alt="Infiniti Q50" class="car-image">
+                <h3>Infiniti Q50</h3>
+                <p>Price: $45,000</p>
+                <p>Year: 2023 | Fuel Efficiency: 23 MPG | Transmission: 7-Speed Automatic</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AutoCars. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
